@@ -4,31 +4,28 @@
 #include"../Container/stack.h"
 
 #include"../Container/queue.h"
+
+#include"../Container/tree.h"
+
+
+
 using namespace std;
-
-
-
 
 int main(void)
 {
+	Node<int> *root = new Node<int> (23);
 
-	Queue<int> q;
+	//root->printNode();
+	Tree<int> *t = new Tree<int>;
 
-	//cout << q.isEmpty();
 
-	q.push(23);
-	q.push(47);
+	root = t->insert(root,12);
 
-	q.push(53);
+	root = t->insert(root, 6);
 
-	q.pop();
+	root = t->insert(root, 9);
 
-	q.pop();
-
-	q.pop();
-
-	q.printQueue();
-
+	cout << t->search(root,6);
 
 	system("PAUSE");
 
