@@ -7,26 +7,39 @@
 
 #include"../Container/tree.h"
 
-
+#include"../Container/Heap.h"
 
 using namespace std;
 
+
+int getElement(doub<int,int> element)
+{
+	return element.y;
+}
+
+
+
 int main(void)
 {
-	Node<int> *root = new Node<int> (23);
+	doub<int, int> *arr = new doub<int, int>[10];
 
-	//root->printNode();
-	Tree<int> *t = new Tree<int>;
+	for (int i = 0; i < 10; i++)
+	{
+		cout << " X: " << endl;
+		cin >> arr[i].x;
+		cout << "Y: " << endl;
+		cin >> arr[i].y;
+	}
 
+	Heap<doub<int, int>, int> h;
 
-	root = t->insert(root,12);
+	
+	h.push(arr[0]);
+	//int(*funcptr)(doub<int, int>) = getElement;
 
-	root = t->insert(root, 6);
-
-	root = t->insert(root, 9);
-
-	cout << t->search(root,6);
-
+	//h.makeHeap(arr,10,funcptr);
+	
+	
 	system("PAUSE");
 
 	return 0;

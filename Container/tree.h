@@ -25,7 +25,7 @@ public:
 	{
 	}
 
-	void printNode()
+	void print()
 	{
 		cout << val;
 	}
@@ -174,7 +174,6 @@ public:
 		}
 
 	}
-	
 };
 
 

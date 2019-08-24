@@ -10,7 +10,7 @@ class doub
 public:
 	T1 x;
 	T2 y;
-	void printDoub()
+	void print()
 	{
 		cout << "(" << x << "," << y << ")";
 	}

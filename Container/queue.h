@@ -66,7 +66,7 @@ public:
 		return start >= end;
 	}
 
-	void printQueue()
+	void print()
 	{
 		int i = start + 1;
 		
